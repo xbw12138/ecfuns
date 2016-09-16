@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#373447">
+    <include layout="@layout/every_title" android:id="@+id/login_title"/>
+ <LinearLayout
+        android:id="@+id/accountLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_user" />
+
+        <EditText
+            android:id="@+id/chat_register_username"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/register_phone_number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#CEC9E7"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+     <View
+        android:id="@+id/line3"
+        android:layout_width="240dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/accountLayout"
+        android:layout_centerHorizontal="true"
+        android:background="#CEC9E7" />
+    <LinearLayout
+        android:id="@+id/accountLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_user" />
+
+        <EditText
+            android:id="@+id/chat_register_code"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/register_message"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#CEC9E7"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="240dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/accountLayout2"
+        android:layout_centerHorizontal="true"
+        android:background="#CEC9E7" />
+
+    <LinearLayout
+        android:id="@+id/pwdLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_pwd" />
+
+        <EditText
+            android:id="@+id/chat_register_password"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/register_password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#CEC9E7"
+            android:textSize="16sp" />
+
+         <CheckBox
+                    android:id="@+id/chat_register_password_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:button="@drawable/password_checkbox" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="240dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/pwdLayout"
+        android:layout_centerHorizontal="true"
+        android:background="#CEC9E7" />
+	<LinearLayout
+        android:id="@+id/pwdLayoutre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_pwd" />
+
+        <EditText
+            android:id="@+id/chat_register_password2"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/register_confirm_password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#CEC9E7"
+            android:textSize="16sp" />
+
+         <CheckBox
+                    android:id="@+id/chat_register_password_checkbox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:button="@drawable/password_checkbox" />
+    </LinearLayout>
+<View
+        android:id="@+id/line4"
+        android:layout_width="240dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/pwdLayoutre"
+        android:layout_centerHorizontal="true"
+        android:background="#CEC9E7" />
+
+    <Button
+        android:id="@+id/chat_register_signup_btn"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/line2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:background="#312E3F"
+        android:padding="10dp"
+        android:text="@string/forget_confirm"
+        android:textColor="#CEC9E7"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/chat_register_sendmsg_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/line3"
+        android:layout_alignRight="@+id/line3"
+        android:layout_below="@+id/line3"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/btn_long_red"
+        android:text="@string/register_send_verification_code" />
+
+
+</RelativeLayout>

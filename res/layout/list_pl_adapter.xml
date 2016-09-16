@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp" 
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" >
+
+            <com.example.fragment.CircleImg
+                android:id="@+id/user_logo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/user_logo"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_name"
+                android:layout_below="@+id/text_name"
+                android:text="TextView"
+                android:textColor="@color/albumback" />
+
+            <Button
+                android:id="@+id/btn_zan"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/user_logo"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_share"
+                android:drawableLeft="@drawable/timeline_3"
+                android:focusable="false"
+                android:scaleType="matrix"
+                android:text="点赞"
+                android:textColor="#424242"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rrr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1" >
+
+            <TextView
+                android:id="@+id/text_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="50dp"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/yiwancheng2"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</FrameLayout>

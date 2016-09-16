@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="50dp"
+    android:background="#F4F4F4" >
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_content"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_above="@+id/rrrr" >
+
+            <Button
+                android:id="@+id/btn_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/land_button"
+                android:text="启用这条悄悄话"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_nofinish"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/btn_finish"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/land_button"
+                android:text="取消使用这条悄悄话"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/btn_nofinish"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/btn_nofinish"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/land_button"
+                android:text="分享二维码给QQ好友"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rrrr"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" >
+
+                <Button
+                    android:id="@+id/dialog_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_long_red"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#E0E0E0" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

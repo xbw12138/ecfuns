@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_gravity="bottom">
+    
+        <LinearLayout
+            android:id="@+id/main_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bottom_bar_normal_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/btn_container_conversation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/em_main_bottom_item_bg"
+                android:drawableTop="@drawable/bottom_1"
+                android:onClick="onTabClicked"
+                android:paddingBottom="2dip"
+                android:paddingTop="1dip"
+                android:scaleType="matrix"
+                android:text="首页"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_container_address_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_find"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/em_main_bottom_item_bg"
+                android:drawableTop="@drawable/bottom_2"
+                android:onClick="onTabClicked"
+                android:paddingBottom="2dip"
+                android:paddingTop="1dip"
+                android:scaleType="matrix"
+                android:text="悄悄话"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_container_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_me"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/em_main_bottom_item_bg"
+                android:drawableTop="@drawable/bottom_3"
+                android:onClick="onTabClicked"
+                android:paddingBottom="2dip"
+                android:paddingTop="1dip"
+                android:scaleType="matrix"
+                android:text="我的"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

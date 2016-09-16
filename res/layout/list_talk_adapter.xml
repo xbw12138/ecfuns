@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:id="@+id/btn_re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" >
+
+            <com.example.fragment.CircleImg
+                android:id="@+id/user_logo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/user_logo"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_name"
+                android:layout_below="@+id/text_name"
+                android:text="TextView"
+                android:textColor="@color/albumback" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/text_name"
+                android:text="TextView"
+                android:textColor="@color/aqua" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rrr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1" >
+
+            <TextView
+                android:id="@+id/text_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="17dp"
+                android:autoLink="email|phone|web"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.example.ninepic.NoScrollGridView
+                android:id="@+id/gridview"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:columnWidth="70dp"
+                android:gravity="center"
+                android:horizontalSpacing="2.5dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2.5dp" />
+
+      
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/gridview"
+                android:layout_alignParentRight="true"
+                android:text="TextView"
+                android:textColor="@color/blue"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rrr" >
+
+            <include
+                android:id="@+id/ly_bottombar"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                layout="@layout/fragment_bottom_share" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/yiwancheng2"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</FrameLayout>

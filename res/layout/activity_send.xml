@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#373447" 
+    android:id="@+id/sendlayout">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout08"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar2"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RelativeLayout08"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <include layout="@layout/commom_back_btn" />
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:text="发布"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/send_btn"
+        android:layout_below="@+id/title" >
+
+        <RelativeLayout
+            android:id="@+id/uploadLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#373447"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edt_describe"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="请输入内容(140字)"
+                android:padding="10dp"
+                android:textColor="#373447"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/edt_describe"
+                android:layout_margin="10dp"
+                android:layout_marginTop="26dp"
+                android:text="添加图片"
+                android:textColor="#CEC9E7"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/edt_describe"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="TextView" />
+
+            <ImageView
+                android:id="@+id/picImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_name"
+                android:layout_below="@+id/text_name"
+                android:src="@drawable/ic_add_pic" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignRight="@+id/edt_describe"
+                android:layout_below="@+id/text_name"
+                android:src="@drawable/btn_innew" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/land_button"
+        android:text="发布"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+</RelativeLayout>

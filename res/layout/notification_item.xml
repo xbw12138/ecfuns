@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout_btn"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="3dp" >
+
+    <ImageView
+        android:id="@+id/notificationImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:src="@android:drawable/stat_sys_download" />
+    <!-- android:textColor="#FF000000" -->
+
+    <TextView
+        android:id="@+id/notificationPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notificationImage"
+        android:paddingLeft="16dp"
+        android:paddingTop="2dp"
+        android:textColor="#FFFFFFFF" />
+
+    <ProgressBar
+        android:id="@+id/notificationProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/notificationPercent"
+        android:layout_toLeftOf="@+id/linearLayout1"
+        android:layout_toRightOf="@+id/notificationImage"
+        android:paddingLeft="26dp"
+        android:paddingRight="3dp"
+        android:paddingTop="2dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/notificationImage"
+        android:layout_alignRight="@+id/notificationProgress"
+        android:layout_toRightOf="@+id/notificationImage"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/notificationTitle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="26dp"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_clear_pressed" />
+    </LinearLayout>
+
+</RelativeLayout>

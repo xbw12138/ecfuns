@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/login_title"
+        layout="@layout/every_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f2f2f2" >
+
+        
+
+            <com.example.matrix.util.ListViewLoadMore
+                android:id="@+id/listview_order"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="#f2f2f2"
+                android:dividerHeight="10dp"
+                android:scrollbars="none" >
+            </com.example.matrix.util.ListViewLoadMore>
+       
+        <com.example.matrix.util.CustomFAB
+            android:id="@+id/fab_btn"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/bottom_1"
+            android:tint="@android:color/white"
+            custom:bg_color="@color/light_blue" />
+    </RelativeLayout>
+
+</LinearLayout>
