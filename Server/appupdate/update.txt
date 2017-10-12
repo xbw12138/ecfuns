@@ -1,0 +1,4 @@
+﻿XXX
+&1.0.5
+&  新消息通知
+&http://115.159.26.120/ecfun/appupdate/Ecfun1.0.5.apk
